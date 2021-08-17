@@ -35,8 +35,8 @@ body {
   background-color: #2221;
   display: grid;
   grid-template-areas:
-    "img contato"
-    "obj obj"
+    "header header"
+    "contato obj"
     "form hist"
     "idioma hist";
 }
@@ -55,7 +55,7 @@ header h1 {
   font-size: 38px;
 }
 
-div#container {
+#container {
   text-align: -webkit-right;
 
   padding: 52px 17px;
@@ -70,14 +70,14 @@ div#container {
   overflow: hidden;
   position: relative;
   margin-bottom: 10px;
+  margin: auto;
 }
 
 .circle img {
-  position: absolute;
   bottom: -1px;
-  left: -38px;
+  left: -36px;
   width: 134%;
-  grid-area: img;
+  position: relative;
 }
 
 .section {
@@ -89,10 +89,10 @@ div#container {
   text-align: justify;
 }
 
-div ul {
-  grid-area: contato;
+.not-styled-list {
   list-style: none;
   margin: 12px;
+  margin-left: -39px;
 }
 
 #objetivo {
@@ -109,6 +109,16 @@ div ul {
 
 #idioma {
   grid-area: idioma;
+}
+
+#contato {
+  grid-area: contato;
+}
+
+#header {
+  grid-area: header;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #idioma ul {
