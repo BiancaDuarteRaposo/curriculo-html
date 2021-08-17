@@ -1,0 +1,116 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  /* margin: 0; */
+  box-sizing: border-box; /* calcula a caixa pela borda da caixa*/
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+@media (max-width: 970px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 75%; /* 12px */
+  }
+}
+
+@media (max-width: 590px) {
+  :root {
+    font-size: 62.25%; /* 10px */
+  }
+}
+
+body {
+  padding: 40px 50px;
+  margin: 23px 13px;
+  background-color: #2221;
+  display: grid;
+  grid-template-areas:
+    "img contato"
+    "obj obj"
+    "form hist"
+    "idioma hist";
+}
+
+h1,
+h2,
+h3,
+title {
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin-bottom: 7px;
+}
+
+header h1 {
+  padding: 0px 0px 7px 0px;
+  font-size: 38px;
+}
+
+div#container {
+  text-align: -webkit-right;
+
+  padding: 52px 17px;
+  margin-bottom: 10px;
+}
+
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.circle img {
+  position: absolute;
+  bottom: -1px;
+  left: -38px;
+  width: 134%;
+  grid-area: img;
+}
+
+.section {
+  border: 1px solid rgb(181, 180, 180);
+  padding: 29px 50px;
+  margin: 5px 5px;
+  background-color: #2221;
+
+  text-align: justify;
+}
+
+div ul {
+  grid-area: contato;
+  list-style: none;
+  margin: 12px;
+}
+
+#objetivo {
+  grid-area: obj;
+}
+
+#formação {
+  grid-area: form;
+}
+
+#histórico {
+  grid-area: hist;
+}
+
+#idioma {
+  grid-area: idioma;
+}
+
+#idioma ul {
+  list-style: upper-roman;
+}
